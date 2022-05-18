@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.central{
+    
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 100% 20%;
+    display: grid;
+}
+
+section{
+    
+    background-color: white;
+    border-style: solid;
+    border-color: blue;
+    grid-template-rows: auto auto auto;
+    display: grid;
+}
+article{
+    background-color: rgb(146, 195, 228);
+    margin: 0.9%;
+    width: 80%;
+    height: 80%;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    color: black; 
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-color: rgb(185, 128, 150);
+    border-style: solid;
+}
+aside{
+    background-color: white; 
+    border-style: solid;
+    border-color: blue;
+}
+footer{
+    background-color: white;
+    border-style: solid;
+    grid-column: 1 / span 2;
+    border-color: blue;
+}
+header{
+    
+    grid-column: 1 / span 2;
+    border-color: blue;
+    background-color: white;
+    border-style: solid;
+}
+nav{
+    background-color: white;
+    border-style: solid;
+    grid-column: 1 / span 2;
+    border-color: blue;
+}
+h1{
+    
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgb(228, 202, 222);
+    border-color: rgb(185, 128, 150);
+    border-style: solid;
+    width: 94%;
+    height: 75%;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    color: black; 
+    top: 50%;
+}
+h2{
+    width: 90%;
+    height: 370%;
+    font-size: 200%;
+    top: 220%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgb(228, 202, 222);
+    border-color: rgb(185, 128, 150);
+    border-style: solid;
+    text-align: center;
+    position: relative;
+    color: black; 
+}
+h3{
+    width: 90%;
+    height: 92%;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    color: black; 
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgb(228, 202, 222);
+    border-color: rgb(185, 128, 150);
+    border-style: solid;
+}
+@media (min-width: 769px){
+    h3{
+        background-color: rgb(232, 83, 205);
+    }
+    h2{
+        background-color: rgb(232, 83, 205);
+        height: 400%;
+    }
+    h1{
+        background-color: rgb(243, 74, 198);
+    }
+    article{
+        background-color: rgb(237, 143, 11);
+    }
+}
+@media (min-width: 1080px){
+    .central{
+        grid-template-rows: 20% 20% 100% 50% 20%;
+    }
+    h3{
+        background-color: rgb(88, 92, 192);
+    }
+    h2{
+        background-color: rgb(104, 99, 202);
+        top: 250%;
+        height: 450%
+    }
+    h1{
+        background-color: rgb(88, 92, 192);
+    }
+    article{
+        background-color: pink;
+    }
+    section{
+        grid-column: 1 / span 2;
+    }
+    aside{
+        grid-column: 1 / span 2;
+    }
+}
